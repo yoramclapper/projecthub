@@ -1,3 +1,4 @@
 .idea/
 venv_ph/
-.env
+/.env
+/readme.md

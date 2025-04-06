@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,9 @@
 <body>
 
 <header>
-    <h1>KrankYoram</h1>
+    <h1 id="logo-text">Planeet KrankYoram</h1>
+    <img class="logo" src="{% static 'core/pky_logo.png' %}">
+
 </header>
 
 <nav>
@@ -17,7 +20,7 @@
 </nav>
 
 <main>
-    <p>Welkom op planeet KrankYoram!</p>
+    <img class="no-content" src="{% static 'core/pky_no_content.png' %}">
 </main>
 
 </body>

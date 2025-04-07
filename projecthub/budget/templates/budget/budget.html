@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Description"><br>
+    <input type="number" placeholder="Budget"><br>
+    <input type="text" placeholder="Category"><br>
+    <input type="text" placeholder="Active"><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

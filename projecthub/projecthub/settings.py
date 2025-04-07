@@ -36,6 +36,7 @@ CORE_APPS = [
 
 LOCAL_APPS = [
     'core.apps.CoreConfig',
+    'budget.apps.BudgetConfig',
 ]
 
 INSTALLED_APPS = CORE_APPS + LOCAL_APPS

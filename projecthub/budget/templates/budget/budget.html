@@ -7,11 +7,28 @@
 <body>
 <form method="post">
     {% csrf_token %}
-    <input type="text" placeholder="Description"><br>
-    <input type="number" placeholder="Budget"><br>
-    <input type="text" placeholder="Category"><br>
-    <input type="text" placeholder="Active"><br>
-    <button type="submit">Submit</button>
+
+    <fieldset>
+        <legend>Budget</legend>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="name" required><br>
+
+        <label for="budget">Budget:</label>
+        <input type="number" id="budget" name="budget" step=".01" required><br>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="IN">Inkomen</option>
+          <option value="FLEX">Flexibele lasten</option>
+          <option value="VAST">Vaste lasten</option>
+        </select><br>
+
+        <input type="checkbox" id="active" name="active">
+        <label for="active">Active</label><br>
+
+        <button type="submit">Submit</button>
+    </fieldset>
 </form>
 </body>
 </html>

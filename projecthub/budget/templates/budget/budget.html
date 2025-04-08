@@ -1,6 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block title %}<title>Budget</title>{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'budget/form_style.css' %}">{% endblock %}
 
 {% block main %}
+<div class="form-position">
 <form method="post">
     {% csrf_token %}
     {% for field in form %}
@@ -12,4 +17,5 @@
     {% endfor %}
     <button type="submit">Submit</button>
 </form>
+</div>
 {% endblock %}

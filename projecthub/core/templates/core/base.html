@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'core/style.css' %}">
     <meta charset="UTF-8">
-    <title>Home</title>
+    {% block title %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    {% block extra_css %}{% endblock %}
 </head>
 <body>
 

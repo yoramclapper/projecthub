@@ -1,28 +1,9 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{% static 'core/style.css' %}">
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-
-<header>
-    <h1 id="logo-text">Planeet KrankYoram</h1>
-    <img class="logo" src="{% static 'core/pky_logo.png' %}">
-
-</header>
-
-<nav>
-<a href="#">Home</a>
-</nav>
-
-<main>
+{% block main %}
+<div class="main-central">
     <img id="no-content" src="{% static 'core/pky_no_content.png' %}">
     <p>This page does not contain any content yet :(</p>
-</main>
-
-</body>
-</html>
+</div>
+{% endblock %}

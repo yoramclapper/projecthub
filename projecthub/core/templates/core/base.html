@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="logo-text">Planeet KrankYoram</h1>
+        <img class="logo" src="{% static 'core/pky_logo.png' %}">
+    </header>
+
+    <nav>
+        <a href="{% url 'core:index' %}">Home</a>
+        <a href="{% url 'budget:budget' %}">Budget</a>
+    </nav>
+
+    <main>
+    {% block main %}
+    {% endblock %}
+    </main>
+
+</body>
+</html>
